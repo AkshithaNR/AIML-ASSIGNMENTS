@@ -1,0 +1,30 @@
+Assignment (03/03/2026)
+Assignment Name : Build Your First Dataset
+Description : Create a dataset (e.g., study hours vs marks), identify features & labels, predict relationship.
+
+| Student  | Study Hours | Marks |
+| -------- | ----------- | ----- |
+| Akshitha | 2           | 45    |
+| Vishakh  | 3           | 50    |
+| Nithya   | 4           | 60    |
+| Shradda  | 5           | 70    |
+| Suraksha | 6           | 80    |
+| Rahul    | 7           | 85    |
+| Sneha    | 8           | 90    |
+
+
+2. Features and Labels
+Feature (Input): Study Hours
+Label (Output): Marks
+
+In machine learning, features are the input variables, and labels are the values we want to predict.
+
+3. Relationship Prediction
+From the dataset, we can observe that as study hours increase, marks also increase.
+This shows a positive relationship between study time and exam performance.
+
+For example:
+A student studying 2 hours scored 45 marks.
+A student studying 8 hours scored 90 marks.
+
+This means that more study hours generally lead to higher marks, which can be predicted using machine learning models like Linear Regression.
