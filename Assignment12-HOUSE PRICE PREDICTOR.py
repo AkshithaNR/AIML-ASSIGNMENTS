@@ -5,28 +5,30 @@ Description : Train a Linear Regression model, predict prices, and test with new
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-# Dataset
+# Create a sample dataset
 data = {
     "Size_sqft": [500, 800, 1000, 1200, 1500, 1800, 2000],
     "Price": [100000, 150000, 200000, 230000, 300000, 350000, 400000]
 }
 
+# Convert to DataFrame
 dataset = pd.DataFrame(data)
 
 print("Dataset:")
 print(dataset)
 
-# Features and labels
+# Features (input)
 X = dataset[["Size_sqft"]]
+
+# Labels (output)
 y = dataset["Price"]
 
-# Train model
+# Train Linear Regression model
 model = LinearRegression()
 model.fit(X, y)
 
-# New input for prediction
-new_house = pd.DataFrame({"Size_sqft": [1600]})
-
-predicted_price = model.predict(new_house)
+# Predict price for a new house size
+new_size = [[1600]]
+predicted_price = model.predict(new_size)
 
 print("\nPredicted price for house size 1600 sqft:", predicted_price[0])
