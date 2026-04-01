@@ -6,7 +6,7 @@ Description : Clean a dataset by handling missing values, removing duplicates, s
 import pandas as pd
 
 # Load dataset
-data = pd.read_csv(r"C:\Users\akshi\OneDrive\Desktop\AIML INTERNSHIP ASSIGNMENTS\Assignment11-DATA DOCTOR\studentdataset.csv")
+data = pd.read_csv(r"C:\Users\akshi\OneDrive\Desktop\AIML INTERNSHIP ASSIGNMENTS\Assignment11-DATA DOCTOR\studentdataset.csv.csv")
 
 # 1. Check missing values
 print("Missing Values Before Cleaning:")
